@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'print numbers of base 10'
+ * Description: 'print the number of base 10'
  * Return: Always 0
  */
 int main(void)
@@ -12,6 +12,6 @@ int main(void)
 	{
 		printf("%d", n);
 	}
-	print("\n");
+	printf("\n");
 	return (0);
 }
