@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * main - Enrty point
+ * main - function to print combination of two numbers
  *
- * Return: Always 0
+ * Return: 0 on success
  */
+
 int main(void)
 {
 	int i = '0';
