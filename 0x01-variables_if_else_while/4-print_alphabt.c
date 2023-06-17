@@ -4,7 +4,7 @@
 /**
  * main - prints the alphabet without q and e.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
@@ -18,6 +18,7 @@ int main(void)
 			continue;
 		}
 		putchar(n);
+		n++;
 	}
 	putchar('\n');
 	return (0);
