@@ -30,9 +30,6 @@ void print_triangle(int size)
 	}
 }
 
-
-(10-main.c)
-
 #include "main.h"
 
 /**
