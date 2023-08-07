@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * Create_file - Create a file and write content to be in it.
+ * create_file - Create a file with content in it.
  *
- * @param filename The name of the file to be created.
- * @param text_content The text content to be written to the file.
- * @return Returns 1 on success, or -1 if an error occurs.
+ * @filename: The name of the file to be created.
+ * @text_content: The text content to be written to the file.
+ *
+ * Return: Returns 1 on success, or -1 if an error occurs.
  */
-
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
-int fd, write_result, content_length = 0;
+
+	int fd, write_result, content_length = 0;
 
 
 if (filename == NULL)
