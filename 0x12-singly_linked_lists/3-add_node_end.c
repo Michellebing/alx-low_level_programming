@@ -3,27 +3,27 @@
 #include "lists.h"
 
 /**
- * add_node_end - Append a new node at the end of a linked list.
- * @head: A double pointer to the list.
- * @str: store string in new node.
+ * add_node_end - Add a nodes at the end of a linked list.
+ * @head: A pointer to the linked list.
+ * @str: A new nodes with a string.
  *
- * Returns: a pointer to the new node, or NULL if allocation fails
+ * Return: A new element, Null should it fail.
  */
-custom_list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
-custom_list_t *new_node;
-custom_list_t *temp = *head;
-unsigned int length = 0;
+list_t *new_node;
+list_t *temp = *head;
+unsigned int len = 0;
 
-while (str[length])
-length++;
+while (str[len])
+len++;
 
-new_node = (custom_list_t *)malloc(sizeof(custom_list_t));
+new_node = malloc(sizeof(list_t));
 if (!new_node)
 return (NULL);
 
-new_node->data = strdup(str);
-new_node->length = length;
+new_node->str = strdup(str);
+new_node->len = len;
 new_node->next = NULL;
 
 if (*head == NULL)
