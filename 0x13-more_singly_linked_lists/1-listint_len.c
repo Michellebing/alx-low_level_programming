@@ -1,19 +1,21 @@
 #include "lists.h"
 
 /**
- * listint_len - The number of element in linked list
- * @h: Pointer to the linked list.
+ * listint_len - Returns number of a linkedin list.
+ * @head: A pointer to the head list.
  *
- * Return: Number of nodes.
+ * Return: The number of nodes in the linked list.
  */
-size_t listint_len(const listint_t *h)
+size_t listint_len(const listint_t *head)
 {
-size_t num_nodes = 0;
+size_t count = 0;
+const listint_t *current = head;
 
-while (h)
+while (current != NULL)
 {
-num_nodes++;
-h = h->next;
+count++;
+current = current->next;
 }
-return (0);
+
+return (count);
 }
